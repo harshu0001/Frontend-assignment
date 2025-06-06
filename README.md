@@ -1,6 +1,6 @@
 # Front-end Assignment - MathonGo
 
-This is the implementation of the sample task for Frontend Developement required by MathonGo
+This is the implementation of the sample task for Frontend Development required by MathonGo
 
 #### TechStack used:
 
@@ -57,7 +57,7 @@ The project is deployed on Vercel and can be found [here](https://frontend-assig
 #### Landing Page (default - Physics)
 ![Screenshot 2025-06-06 171539](https://github.com/user-attachments/assets/1c65b72a-5769-4e81-9b42-834ff0d2fa53)
 
-#### Chemistry (It also depicts mode toggle (light/dark/syste)
+#### Chemistry (It also depicts mode toggle (light/dark/system)
 ![Screenshot 2025-06-06 171558](https://github.com/user-attachments/assets/b195716e-83bc-429a-b377-641b0ba26599)
 
 #### Mathematics:
