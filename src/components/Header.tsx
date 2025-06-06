@@ -4,11 +4,11 @@ import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { ArrowUpDown } from "lucide-react";
 
-const titles: Record<string, string> = {
-  physics: "Physics PYQs",
-  chemistry: "Chemistry PYQs",
-  mathematics: "Mathematics PYQs",
-};
+// const titles: Record<string, string> = {
+//   physics: "Physics PYQs",
+//   chemistry: "Chemistry PYQs",
+//   mathematics: "Mathematics PYQs",
+// };
 
 export default function Header({
   total,
@@ -18,7 +18,7 @@ export default function Header({
   onSortToggle: () => void;
 }) {
   const pathname = usePathname();
-  const subject = pathname.split("/")[1];
+  // const subject = pathname.split("/")[1];
   // const title = titles[subject] || "Chapters";
 
   return (

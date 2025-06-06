@@ -30,7 +30,14 @@ export default function PhysicsPage() {
     setFiltered(data);
   }, []);
 
-  const handleFilterChange = (filters: any) => {
+  type Filters = {
+  weakOnly: boolean;
+  status: string;
+  selectedClass?: string;
+  selectedUnit?: string;
+};
+
+  const handleFilterChange = (filters: Filters) => {
     let result = [...chapters];
 
     if (filters.weakOnly) {
