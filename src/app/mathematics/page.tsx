@@ -1,6 +1,6 @@
 "use client";
 import LayoutShell from "@/components/LayoutShell";
-import Filters from "@/components/Filters";
+import Filters, { FilterParams } from "@/components/Filters";
 import ChapterCard from "@/components/ChapterCardMaths";
 import { useState, useEffect } from "react";
 import { getChaptersBySubject, Chapter } from "@/lib/data";
@@ -30,14 +30,14 @@ export default function PhysicsPage() {
     setFiltered(data);
   }, []);
 
-  type Filters = {
-  weakOnly: boolean;
-  status: string;
-  selectedClass?: string;
-  selectedUnit?: string;
-};
+//     type Filters = {
+//   weakOnly: boolean;
+//   status: string;
+//   selectedClass?: string;
+//   selectedUnit?: string;
+// };
 
-  const handleFilterChange = (filters: Filters) => {
+  const handleFilterChange = (filters: FilterParams) => {
     let result = [...chapters];
 
     if (filters.weakOnly) {

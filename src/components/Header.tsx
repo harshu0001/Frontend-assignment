@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { ArrowUpDown } from "lucide-react";
 
@@ -17,7 +17,7 @@ export default function Header({
   total: number;
   onSortToggle: () => void;
 }) {
-  const pathname = usePathname();
+  // const pathname = usePathname();
   // const subject = pathname.split("/")[1];
   // const title = titles[subject] || "Chapters";
 

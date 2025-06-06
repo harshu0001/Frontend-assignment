@@ -5,13 +5,19 @@ import { Switch } from "@/components/ui/switch";
 import { getUniqueClassesAndUnits } from "@/lib/data";
 import { usePathname } from "next/navigation";
 import { Select, SelectItem, SelectTrigger, SelectValue, SelectContent } from "@/components/ui/select";
-// import { Filters } from "@/types/filters";
+
+export type FilterParams = {
+  selectedClass?: string | null;
+  selectedUnit?: string | null;
+  status?: string;
+  weakOnly?: boolean;
+};
 
 
 export default function Filters({
   onFilterChange,
 }: {
-  onFilterChange: (filters: any) => void;
+  onFilterChange: (filters: FilterParams) => void;
 }) {
   const subject = usePathname().split("/")[1];
   const [weakOnly, setWeakOnly] = useState(false);
