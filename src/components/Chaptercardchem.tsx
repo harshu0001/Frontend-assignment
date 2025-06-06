@@ -1,10 +1,4 @@
 import { Chapter } from "@/lib/data";
-import { Badge } from "@/components/ui/badge";
-import {
-  BookBookmark,
-  TrendUp,
-  TrendDown,
-} from "phosphor-react";
 import { ArrowUpRight, ArrowDownRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { getRandomIcon } from "@/lib/icons";

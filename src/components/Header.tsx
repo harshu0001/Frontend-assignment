@@ -19,7 +19,7 @@ export default function Header({
 }) {
   const pathname = usePathname();
   const subject = pathname.split("/")[1];
-  const title = titles[subject] || "Chapters";
+  // const title = titles[subject] || "Chapters";
 
   return (
     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">

@@ -5,7 +5,6 @@ import ChapterCard from "@/components/ChapterCard";
 import { useState, useEffect } from "react";
 import { getChaptersBySubject, Chapter } from "@/lib/data";
 import Header from "@/components/Header";
-import Image from 'next/image';
 import {Atom} from "phosphor-react";
 
 export default function PhysicsPage() {
@@ -55,7 +54,7 @@ export default function PhysicsPage() {
     <LayoutShell>
       <div className="flex items-center justify-center mt-4">
         <Atom size={52} color="#f2991c" />
-      <h1 className="text-2xl font-semibold mb-1 ml -2 text-center">Physics PYQs</h1>
+      <h1 className="text-2xl font-semibold mb-1 ml-2 text-center">Physics PYQs</h1>
       </div>
       <p className="text-muted-foreground text-center mb-4">Chapter-wise Collection of Physics PYQs</p>
       <Filters onFilterChange={handleFilterChange} />

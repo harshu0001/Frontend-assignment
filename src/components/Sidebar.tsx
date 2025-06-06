@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
-import {Atom, Flask, MathOperations, CaretRight} from "phosphor-react";
+import {Atom, Flask, MathOperations} from "phosphor-react";
 import { cn } from "@/lib/utils";
 
 const subjects = [
